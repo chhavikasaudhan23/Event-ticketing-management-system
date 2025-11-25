@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Event | Admin</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+
+<body>
+
+<div class="admin-container">
+
+    <h2>Add New Event</h2>
+
+    <form action="backend/admin_add_event.php" method="POST" enctype="multipart/form-data">
+
+        <label>Event Name</label>
+        <input type="text" name="event_name" placeholder="Enter Event Name" required>
+
+        <label>Description</label>
+        <textarea name="description" placeholder="Enter Event Description" required></textarea>
+
+        <label>Date</label>
+        <input type="date" name="event_date" required>
+
+        <label>Location</label>
+        <input type="text" name="location" placeholder="Event Location" required>
+
+        <label>Total Seats</label>
+        <input type="number" name="total_seats" placeholder="Total Seats" required>
+
+        <label>Ticket Price (₹)</label>
+        <input type="number" name="ticket_price" placeholder="Ticket Price" required>
+
+        <label>Upload Event Image</label>
+        <input type="file" name="event_image" accept="image/*" required>
+
+        <button type="submit">Add Event</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

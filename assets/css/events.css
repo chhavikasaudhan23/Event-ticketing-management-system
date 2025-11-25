@@ -1,0 +1,5 @@
+/* events.css - simple grid adjustments */
+.grid { margin: 10px 0; }
+.event-card h3 { margin:8px 0 6px; }
+.event-card p { margin:6px 0; color:#444; }
+.event-card a { display:inline-block; margin-right:8px; }

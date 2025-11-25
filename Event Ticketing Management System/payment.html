@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Payment - Event Ticketing</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="form-card">
+    <h2>Fake Payment Portal</h2>
+    <p>Amount: <strong id="amountSpan">Rs 0</strong></p>
+
+    <label>Payment Method</label>
+    <select id="paymentMethod">
+      <option value="card">Credit/Debit Card</option>
+      <option value="upi">UPI</option>
+      <option value="netbanking">Net Banking</option>
+    </select>
+
+    <input id="number" placeholder="Card / UPI Number">
+    <input id="holder" placeholder="Name on Card / UPI">
+    <input id="cvv" placeholder="CVV (or PIN)" type="password">
+
+    <button id="payBtn">Pay Now</button>
+  </div>
+
+  <script src="assets/js/payment.js"></script>
+</body>
+</html>

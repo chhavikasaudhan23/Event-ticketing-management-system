@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a href="events.html">← Back</a>
+  <div id="profileInfo" class="form-card"></div>
+
+  <script>
+    const user = JSON.parse(sessionStorage.getItem('user') || localStorage.getItem('user') || 'null');
+    const el = document.getElementById('profileInfo');
+    if(!user) el.innerHTML = '<p>No user logged in. <a href="login.html">Login</a></p>';
+    else el.innerHTML = `<h3>${user.name}</h3><p>Email: ${user.email}</p><p>Phone: ${user.phone || '-'}</p>`;
+  </script>
+</body>
+</html>
