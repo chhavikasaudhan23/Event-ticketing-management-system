@@ -1,6 +1,4 @@
--- Create DB and tables
-CREATE DATABASE IF NOT EXISTS event_ticketing;
-USE event_ticketing;
+-- Create DB and tables;
 
 CREATE TABLE IF NOT EXISTS users (
   user_id INT AUTO_INCREMENT PRIMARY KEY,
