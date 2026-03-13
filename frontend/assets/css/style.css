@@ -1,0 +1,91 @@
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #222;
+}
+
+/* ===== GLASS CARD ===== */
+.card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* ===== HEADINGS ===== */
+.card h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ===== LABELS ===== */
+label {
+    font-size: 1.05rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* ===== INPUTS ===== */
+input.form-control {
+    font-size: 1.05rem;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+    font-size: 1.05rem;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #0f9b8e, #38ef7d);
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* ===== LOGIN / REGISTER TEXT FIX (IMPORTANT) ===== */
+.auth-text {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.05rem;
+
+    /* 🔥 REAL FIX */
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+/* anchor fix */
+.auth-text a {
+    display: inline;
+    font-weight: 600;
+    text-decoration: none;
+    color: #0f5132;
+}
+
+.auth-text a:hover {
+    text-decoration: underline;
+}
